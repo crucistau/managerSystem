@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.crucistau.mapper.SubjectMapper">
+<!--    <resultMap id="subjectMap" type="com.crucistau.entity.Subject">-->
+<!--        <result property="id" column="id"/>-->
+<!--        <result property="subjectName" column="subject_name"/>-->
+<!--        <result property="faculty" column="faculty"/>-->
+<!--        <result property="teacherId" column="teacher_id"/>-->
+<!--        <result property="secretaryId" column="secretary_id"/>-->
+<!--        <result property="state" column="state"/>-->
+<!--        <collection property="studentList" javaType="java.util.ArrayList" ofType="com.crucistau.entity.Student">-->
+<!--            <result column="stu_name" javaType="stuName"/>-->
+<!--            <result column="stu_id" javaType="stuId"/>-->
+<!--        </collection>-->
+<!--    </resultMap>-->
+
+<!--    <select id="findStu" resultMap="subjectMap">-->
+<!--        select a.stu_name stu_name, a.faculty stu_id-->
+<!--        from tb_stu a ,tb_student_subject b-->
+<!--        WHERE b.student_id = a.stu_id AND b.subject_id= #{subjectId}-->
+<!--    </select>-->
+</mapper>

@@ -1,0 +1,48 @@
+server:
+  port: 8081
+
+
+spring:
+  datasource:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/db1?serverTimezone=GMT%2b8
+      username: 
+      password: 
+  mail:
+    host: smtp.qq.com
+    username: 
+    password: 
+    properties.mail.smtp.ssl.enable: true
+  redis:
+    host: 
+    port: 6379
+    password: 
+    database: 1
+    lettuce:
+      pool:
+        max-active: 10
+        max-idle: 10
+        min-idle: 1
+        time-between-eviction-runs: 10s
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size:  10MB
+
+mybatis-plus:
+  global-config:
+    db-config:
+      table-prefix: tb_
+      id-type: auto
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml  #扫描所有mybatis的xml文件
+files:
+  upload:
+    path: D:/upload/ #文件下载路径
+
+
+
+
